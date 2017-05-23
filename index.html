@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>		<!-- 這是註解 -->
-<html>				<!-- 這是html開頭的tag -->
-<head>				<!-- 這是head開頭的tag -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<!-- 宣告編碼 -->
-<title>這是要教給大家的Javascript程式</title>							<!-- 放在視窗列的文字 -->
+﻿<!DOCTYPE html>		
+<html>				
+<head>				
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+<title>這是要教給大家的Javascript程式</title>							
 
     <!-- CSS Base -->
      <link rel="stylesheet" type='text/css' media='all' href="css/base.css"> 
@@ -12,7 +12,7 @@
      <link rel="stylesheet" type='text/css' media='all' href="css/svg-icons.css"> 
 
 
-</head>				<!-- 這是head結束的tag -->
+</head>				
 <body>
     <main role="main">
         <article id="webslides" class="vertical">
@@ -20,60 +20,40 @@
 <!-- 下面是選項的語法 -->
 <div class="wrap  fadeInUp" id="sec1">
 	<div class="content-left">
-		<input type="radio" name="option" value="跑步" checked>跑步<br>
-		<input type="radio" name="option" value="鐵軌">鐵軌<br>
-		<input type="radio" name="option" value="山巔">山巔<br>
+		<input type="radio" name="option" value="日落" checked>日落<br>
+		<input type="radio" name="option" value="海灘">海灘<br>
+		<input type="radio" name="option" value="草原">草原<br>
 		<select name="test" class="opts" id="myselect">
-		  <option selected value=1>舒宇宸</option>
-		  <option value=2>劉之中</option>
-		  <option value=3>李昱勳</option>
+		  <option selected value=1>吳錦雲</option>
+		  <option value=2>史奴比</option>
+		  <option value=3>掰掰啾啾</option>
 		</select>
-		名言一:<input id="quote_input1" value="數學建模教育之道無它, 唯數學與榜樣"> <br>
-		名言二:<input id="quote_input2" value="Mathematical Modeling is nothing, but Mathematics and Model!"> <br>
-		名言三:<input id="quote_input3" value="舒大ㄅ土, me"> <br>
-		<button type="button" id="mybutton" onclick=showopt()>產生名言</button>	<!-- 按了之後要執行showopt() -->
+		名言一:<input id="quote_input1" value="你好我好大家好"> <br>
+		名言二:<input id="quote_input2" value="You are  my sunshine."> <br>
+		名言三:<input id="quote_input3" value="吳阿雲,me"> <br>
+		<button type="button" id="mybutton" onclick=showopt()>產生名言</button>	
 	</div>
 </div>
 <div id="sec2">	
-	<span id="teacher" class="background-right-bottom" style="background-image:url('images/ycshu.png'); z-index:5;"></span>
-	<span id="bgimage" class="background light" style="background-image:url('images/road-dawn-mountains-sky.jpeg');"></span>
+	<span id="teacher" class="background-right-bottom" style="background-image:url('images/1.png'); z-index:5;"></span>
+	<span id="bgimage" class="background light" style="background-image:url('images/356266.jpg');"></span>
 	<div class="wrap  fadeInUp">
 		<div class="content-left">
 			<blockquote>
-				<h3 id="quote_line1">"數學建模教育之道無它<br>唯數學與榜樣"</h3>
-				<p id="author1"><cite>舒大ㄅ土</cite></p>
+				<h3 id="quote_line1">"你好我好大家好"</h3>
+				<p id="author1"><cite>吳阿雲</cite></p>
 			</blockquote>
 			<blockquote>
-				<h3 id="quote_line2">"Mathematical Modeling is nothing<br>but Mathematics and Model!"</h3>
+				<h3 id="quote_line2">"You are  my sunshine."</h3>
 				<p id="author2"><cite>me</cite></p>				
 			</blockquote>
 		</div>
 	</div>
 </div>
 </section>
-<!-- 改成一頁囉 :D
-<section class="bg-black aligncenter" id="section_output">
-<div id="sec2">
-	<span id="teacher" class="background-right-bottom" style="background-image:url('images/ycshu.png'); z-index:5;"></span>
-	<span id="bgimage" class="background light" style="background-image:url('images/road-dawn-mountains-sky.jpeg');"></span>
-	
-	<div class="wrap  fadeInUp">
-		<div class="content-left">
-			<blockquote>
-				<h3 id="quote_line1">"數學建模教育之道無它<br>唯數學與榜樣"</h3>
-				<p id="author1"><cite>舒大ㄅ土</cite></p>
-			</blockquote>
-			<blockquote>
-				<h3 id="quote_line2">"Mathematical Modeling is nothing<br>but Mathematics and Model!"</h3>
-				<p id="author2"><cite>me</cite></p>				
-			</blockquote>
-		</div>
-	</div>
-</div>
-</section>
--->
+
         </article>
-        <!-- end article -->
+        
     </main>
 
 <!-- 以下就真的是Javascript的程式了 -->
@@ -102,11 +82,11 @@ function showopt() {
 	
 	var teacher_no = document.getElementById("myselect").value;
 	if(teacher_no == 1) {
-		document.getElementById("teacher").style = "background-image:url('images/ycshu.png'); z-index:5;";
+		document.getElementById("teacher").style = "background-image:url('images/1.png'); z-index:5;";
 	} else if (teacher_no == 2) {
-		document.getElementById("teacher").style = "background-image:url('images/ccliu.png'); z-index:5;";
+		document.getElementById("teacher").style = "background-image:url('images/2.png'); z-index:5;";
 	} else if (teacher_no == 3) {
-		document.getElementById("teacher").style = "background-image:url('images/andylee.png'); z-index:5;";
+		document.getElementById("teacher").style = "background-image:url('images/3.png'); z-index:5;";
 	}
 	
 	var y = document.getElementsByName("option");
@@ -114,11 +94,11 @@ function showopt() {
 		if(y[i].checked) {
 			document.getElementById("author2").innerHTML = "<cite>" + x[1] + "</cite>";
 			if(i==1) {
-				document.getElementById("bgimage").style = "background-image:url('images/road-2.jpg');";
+				document.getElementById("bgimage").style = "background-image:url('images/356266.jpg');";
 			} else if(i==2) {
-				document.getElementById("bgimage").style = "background-image:url('images/road-3.jpg');";
+				document.getElementById("bgimage").style = "background-image:url('images/b7e75b353bb412d822b214e21aee1691.jpg');";
 			} else {
-				document.getElementById("bgimage").style = "background-image:url('images/road-dawn-mountains-sky.jpeg');";
+				document.getElementById("bgimage").style = "background-image:url('images/6048606472_1908056da2_b.jpg');";
 			}
 		}
 	}
